@@ -32,4 +32,4 @@ How to use:
 ##### Parameters
 - XmlSaveFile - the file path and name of an XML memory file
 - IgnoreList - comma-separated list of variable names to "ignore"
-- ObjectReference - an instantiated object (e.g. <code>CREATOEBJECT('EMPTY')</code>)
+- ObjectReference - an instantiated object (e.g. <code>CREATOBJECT('EMPTY')</code>)
