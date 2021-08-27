@@ -238,7 +238,7 @@ DEFINE CLASS MemToXml AS Exception
 			tcSkeleton = '*'
 		ENDIF
 
-		ADDPROPERTY(_Screen,'cMemoryOutFile',fTempPath()+JUSTFNAME(m.tcFileName)+'.txt')
+		ADDPROPERTY(_Screen,'cMemoryOutFile',SYS(2023)+JUSTFNAME(m.tcFileName)+'.txt')
 		ADDPROPERTY(_Screen,'cMemorySkeleton',m.tcSkeleton)
 
 		IF this._ListMemory('cMemoryList')
@@ -329,7 +329,7 @@ DEFINE CLASS MemToXml AS Exception
 
 		this._SetSettings()
 
-		ADDPROPERTY(_Screen,'cMemoryOutFile',fTempPath()+'memfile.txt')
+		ADDPROPERTY(_Screen,'cMemoryOutFile',SYS(2023)+'memfile.txt')
 		ADDPROPERTY(_Screen,'cMemorySkeleton','*')
 
 		IF this._ListMemory('cMemoryListBefore')
